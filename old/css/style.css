@@ -1,0 +1,188 @@
+div#about {
+	height: 100%;
+	width: 100%;
+	left: 0%;
+	top: 100%;
+	position: absolute;
+}
+div#nav {
+	height: 59px;
+	width: 100%;
+	left: 0%;
+	top: 200%;
+	position: absolute;
+	z-index: 200;
+}
+div#dance {
+	height: 75%;
+	width: 90%;
+	margin:0 auto;
+	left: 0;
+	right: 0;
+	top: 217%;
+	background: url('../img/dance/background.jpg') no-repeat #fff;
+	position: absolute;
+}
+div#photography {
+	height: 75%;
+	width: 90%;
+	margin:0 auto;
+	left: 0;
+	right: 0;
+	top: 297%;
+	background: url('../img/photography/background.jpg') no-repeat #FFF;
+	position: absolute;
+}
+div#music {
+	height: 75%;
+	width: 90%;
+	margin:0 auto;
+	left: 0;
+	right: 0;
+	top: 377%;
+	background: url('../img/music/background.jpg') no-repeat #F0F0F0;
+	position: absolute;
+}
+div#dramatics {
+	height: 75%;
+	width: 90%;
+	margin:0 auto;
+	left: 0;
+	right: 0;
+	top: 457%;
+	background: url('../img/dramatics/background.jpg') no-repeat #000;
+	position: absolute;
+}
+div#literary {
+	height: 75%;
+	width: 90%;
+	margin:0 auto;
+	left: 0;
+	right: 0;
+	top: 537%;
+	background: url('../img/literary/background.jpg') no-repeat #33A02B;
+	position: absolute;
+}
+div#fun {
+	height: 75%;
+	width: 90%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 617%;
+	background: url('../img/fun/background.jpg') no-repeat #000;
+	position: absolute;
+}
+div#groundzero {
+	height: 90%;
+	width: 90%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 697%;
+	background: url('http://placehold.it/800x400/800080/FFF/&text=Ground+Zero+Coming+Soon!') no-repeat #800080;
+	position: absolute;
+}
+div#register {
+	height: auto;
+	width: 100%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 792%;
+	position: absolute;
+}
+div#footer {
+	height: 40%;
+	width: 100%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 777%;
+	background: url('http://placehold.it/800x400/663300/FFFFFF/&text=Footer') no-repeat #663300;
+	position: absolute;
+}
+
+div.left {
+	width: 25%;
+	float: left;
+}
+div.right {
+	width: 75%;
+	float: right;
+	padding: 5% 0;
+	font-family: 'Roboto', sans-serif;
+}
+#dramatics,#fun,#groundzero,#literary div.right h1,h2{
+	color: white;
+}
+body {
+	overflow-x: hidden;
+}
+div#about {
+	height: 100%;
+	width: 100%;
+}
+.cycle-slideshow {
+	height: 100%;
+	width: 100%;
+
+}
+.cycle-slideshow img{
+	height: 100%;
+	width: 100%;
+}
+/* prev / next links */
+.cycle-prev, .cycle-next { position: absolute; top: 0; width: 30%; opacity: 0; filter: alpha(opacity=0); z-index: 800; height: 100%; cursor: pointer; }
+.cycle-prev { left: 0;  background: url(http://malsup.github.com/images/left.png) 50% 50% no-repeat;}
+.cycle-next { right: 0; background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;}
+.cycle-prev:hover, .cycle-next:hover { opacity: .7; filter: alpha(opacity=70) }
+
+.disabled { opacity: .5; filter:alpha(opacity=50); }
+
+/* caption */
+.cycle-caption { position: absolute; color: white; bottom: 15px; right: 15px; z-index: 700; }
+
+
+/* overlay */
+.cycle-overlay { 
+    font-family: tahoma, arial;
+    position: absolute; bottom: 0; width: 100%; z-index: 600;
+    background: black; color: white; padding: 15px; opacity: .5;
+}
+
+div.overlay {
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1000;
+}
+.intro {
+	padding: 10%;
+	color: white;
+	text-align: center;
+	font-family: 'Roboto',sans-serif;
+	font-size: 175%;
+}
+
+.intro h1{
+	font-family: 'Lobster', sans-serif;
+	color: #f3210d;
+	font-size: 220%;
+}
+
+body{
+	background: url("../img/gray.jpg") repeat;	
+}
+.home {
+	z-index:3;
+	position:absolute;
+	padding:2% 15%;
+	text-align: center;
+	font-family: 'Lobster', sans-serif;
+	color: white;
+}
+img.roadies {
+	cursor: pointer;
+}

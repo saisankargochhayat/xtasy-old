@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "restricted area"
+AuthUserFile /home/cetb/public_html/xtasy/admin/.htpasswd
+require valid-user

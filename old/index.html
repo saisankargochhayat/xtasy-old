@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Xtasy 2k15 - Cultural Fest of College of Engineering and Technology, Bhubaneswar</title>
+	<meta property="og:title" content="Xtasy 2k15"/>
+	<meta property="og:type" content="Website"/>
+	<meta property="og:url" content="http://xtasy.cetb.in"/>
+	<meta property="og:image" content="http://xtasy.cetb.in/img/xtasy.png"/>
+	<meta property="og:site_name" content="Xtasy 2k15"/>
+	<meta property="fb:admins" content="1259196618"/>
+	<link rel="stylesheet" type="text/css" href="css/pace.css">
+	<script type="text/javascript" src="js/pace.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lobster|Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/js-image-slider.css">
+	<link rel="stylesheet" type="text/css" href="css/component.css">
+	<link rel="stylesheet" type="text/css" href="css/sticky-navigation.css">
+	<link rel="stylesheet" type="text/css" href="css/caption-hover.css">
+	<link rel="stylesheet" type="text/css" href="css/sweet-alert.css">
+	<style>
+		div#about {
+			height: 100%;
+			width: 100%;
+			left: 0%;
+			top: 100%;
+			position: absolute;
+		}
+		div#nav {
+			height: 59px;
+			width: 100%;
+			left: 0%;
+			top: 200%;
+			position: absolute;
+			z-index: 200;
+		}
+		div#dance {
+			height: 75%;
+			width: 90%;
+			margin:0 auto;
+			left: 0;
+			right: 0;
+			top: 217%;
+			background: url('../img/dance/background.jpg') no-repeat #fff;
+			position: absolute;
+		}
+		div#photography {
+			height: 75%;
+			width: 90%;
+			margin:0 auto;
+			left: 0;
+			right: 0;
+			top: 297%;
+			background: url('../img/photography/background.jpg') no-repeat #FFF;
+			position: absolute;
+		}
+		div#music {
+			height: 75%;
+			width: 90%;
+			margin:0 auto;
+			left: 0;
+			right: 0;
+			top: 377%;
+			background: url('../img/music/background.jpg') no-repeat #F0F0F0;
+			position: absolute;
+		}
+		div#dramatics {
+			height: 75%;
+			width: 90%;
+			margin:0 auto;
+			left: 0;
+			right: 0;
+			top: 457%;
+			background: url('../img/dramatics/background.jpg') no-repeat #000;
+			position: absolute;
+		}
+		div#literary {
+			height: 75%;
+			width: 90%;
+			margin:0 auto;
+			left: 0;
+			right: 0;
+			top: 537%;
+			background: url('../img/literary/background.jpg') no-repeat #33A02B;
+			position: absolute;
+		}
+		div#fun {
+			height: 75%;
+			width: 90%;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+			top: 617%;
+			background: url('../img/fun/background.jpg') no-repeat #000;
+			position: absolute;
+		}
+		div#groundzero {
+			height: 90%;
+			width: 90%;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+			top: 697%;
+			background: url('http://placehold.it/800x400/800080/FFF/&text=Ground+Zero+Coming+Soon!') no-repeat #800080;
+			position: absolute;
+		}
+		div#register {
+			height: auto;
+			width: 100%;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+			top: 792%;
+			position: absolute;
+		}
+		div.left {
+			width: 25%;
+			float: left;
+		}
+		div.right {
+			width: 75%;
+			float: right;
+			padding: 5% 0;
+			font-family: 'Roboto', sans-serif;
+		}
+		#dramatics,#fun,#groundzero,#literary div.right h1,h2{
+			color: white;
+		}
+		body {
+			overflow-x: hidden;
+		}
+		div#about {
+			height: 100%;
+			width: 100%;
+		}
+		.cycle-slideshow {
+			height: 100%;
+			width: 100%;
+
+		}
+		.cycle-slideshow img{
+			height: 100%;
+			width: 100%;
+		}
+		/* prev / next links */
+		.cycle-prev, .cycle-next { position: absolute; top: 0; width: 30%; opacity: 0; filter: alpha(opacity=0); z-index: 800; height: 100%; cursor: pointer; }
+		.cycle-prev { left: 0;  background: url(http://malsup.github.com/images/left.png) 50% 50% no-repeat;}
+		.cycle-next { right: 0; background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;}
+		.cycle-prev:hover, .cycle-next:hover { opacity: .7; filter: alpha(opacity=70) }
+
+		.disabled { opacity: .5; filter:alpha(opacity=50); }
+
+		/* caption */
+		.cycle-caption { position: absolute; color: white; bottom: 15px; right: 15px; z-index: 700; }
+
+
+		/* overlay */
+		.cycle-overlay { 
+			font-family: tahoma, arial;
+			position: absolute; bottom: 0; width: 100%; z-index: 600;
+			background: black; color: white; padding: 15px; opacity: .5;
+		}
+
+		div.overlay {
+			background: rgba(0,0,0,0.5);
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: 1000;
+		}
+		.intro {
+			padding: 10%;
+			color: white;
+			text-align: center;
+			font-family: 'Roboto',sans-serif;
+			font-size: 175%;
+		}
+
+		.intro h1{
+			font-family: 'Lobster', sans-serif;
+			color: #f3210d;
+			font-size: 220%;
+		}
+
+		body{
+			background: url("../img/gray.jpg") repeat;
+		}
+		.home {
+			z-index:3;
+			position:absolute;
+			padding:2% 15%;
+			text-align: center;
+			font-family: 'Lobster', sans-serif;
+			color: white;
+		}
+		img.roadies {
+			cursor: pointer;
+		}
+		.schedule {
+			position: fixed;
+			top: 10%;
+			right: 1%;
+			height: auto;
+			width: 7%;
+			z-index: 10000;
+		}
+	</style>
+	<link rel="shortcut icon" href="img/x.png">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<a href="xtasy_schedule.pdf" target="_newtab"><img src="img/schedule.png" alt="" class="schedule"></a>
+	<div id="section1">
+		<div id="boxgallery" class="boxgallery" data-effect="effect-2">
+			<div class="panel"><img src="img/1.jpg" alt="Image 1"/></div>
+			<div class="panel"><img src="img/2.jpg" alt="Image 2"/></div>
+			<div class="panel"><img src="img/3.jpg" alt="Image 3"/></div>
+			<div class="panel"><img src="img/4.jpg" alt="Image 4"/></div>
+		</div>
+	</div>
+	<div class="home">
+		<img src="img/xtasy.png" alt="" width="auto" align="center">
+		<h2>27th Feb - 1st Mar</h2>
+		<h2>The Annual Cultural Fest of College of Engineering and Technology, Bhubaneswar</h2>
+		<h2>Gear up yourself to bring the HERO out of you</h2>
+	</div>
+	<div style="z-index:3;position:absolute;left:47%;top:85%;">
+		<a href="#about" ><img src="img/down.png" height="70" width="70" ></a>
+	</div>
+	<div id="about">
+		<div class="overlay">
+			<div class="intro">
+				<h1>About Xtasy</h1>
+				<p>Xtasy is the annual cultural festival of College of Engineering and Technology, Bhubaneshwar. Since it's inception in 1992, it has been a very faithful platform to the talented youngsters across India. Singing, Dancing, Fashion Parade, Drama, Rock Band Performance, Treasure Hunt and Out of Box Debating forum and numerous other exiting fun events, everyone gets a slice of the cake, and who can miss the celebrity nights. So this February book your dates and come be a part of this extravaganza. Show us what you've got and join us in our celebration.</p>
+			</div>
+		</div>
+		<div id="about-background" class="cycle-slideshow" data-cycle-fx="fade">
+			<img src="img/about/A.jpg" alt="">
+			<img src="img/about/C.jpg" alt="">
+			<img src="img/about/D.jpg" alt="">
+			<img src="img/about/E.jpg" alt="">
+			<img src="img/about/F.jpg" alt="">
+			<img src="img/about/H.jpg" alt="">
+		</div>
+	</div><!-- /about -->
+
+	<div id="nav">
+		<div id='cssmenu'>
+			<ul>
+				<li class='active'><a href='#'>Home</a></li>
+				<li><a href='#dance'>Dance</a></li>
+				<li><a href='#photography'>Photography</a></li>
+				<li><a href='#music'>Music</a></li>
+				<li><a href='#dramatics'>Dramatics</a></li>
+				<li><a href='#literary'>Literary</a></li>
+				<li><a href='#fun'>Fun</a></li>
+				<li><a href='#groundzero'>Ground Zero</a></li>
+				<li><a href='#register'>Register</a></li>
+				<li><a href='credits'>Credits</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div id="dance" class="four columns scrollme animateme" data-when="enter" data-from="0.5" data-to="0" data-crop="false" data-opacity="0" data-scale="1.5">
+				<div class="row">
+					<div class="left">&nbsp;</div>
+					<div class="right">
+						<h1>Dance</h1>
+						<ul class="grid cs-style-4">
+							<li>
+								<figure>
+									<div><img src="img/dance/1.jpg" alt="img05"></div>
+									<figcaption>
+										<h3>RIP OUT</h3>
+										<span>Group Battle</span>
+										<a class="ripout">Take a look</a>
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<div><img src="img/dance/2.jpg" alt="img06"></div>
+									<figcaption>
+										<h3>The Dancing Feet</h3>
+										<span>Solo Dance Competition</span>
+										<a class="dancingfeet">Take a look</a>
+									</figcaption>
+								</figure>
+							</li>
+							<br/>
+							<li>
+								<figure>
+									<div><img src="img/dance/3.jpg" alt="img02"></div>
+									<figcaption>
+										<h3>Jugalbandi</h3>
+										<span></span>
+										<a class="jugalbandi">Take a look</a>
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<div><img src="img/dance/4.jpg" alt="img04"></div>
+									<figcaption>
+										<h3>Do The Hustle</h3>
+										<span></span>
+										<a class="dothehustle">Take a look</a>
+									</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</div>
+				</div><!-- /row -->
+			</div><!-- /dance -->
+		</div>
+	</div>
+	<div class="container">
+		<div id="photography" class="four columns scrollme animateme" data-when="enter" data-from="0.5" data-to="0" data-crop="false" data-opacity="0" data-scale="1.5">
+			<div class="row">
+				<div class="left">&nbsp;</div>
+				<div class="right">
+					<h1>Photography</h1>
+					<ul class="grid cs-style-4">
+						<li>
+							<figure>
+								<div><img src="img/photography/5.jpg" alt="img05"></div>
+								<figcaption>
+									<h3>Tasveer</h3>
+									<span></span>
+									<a class="tasveer">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<div><img src="img/photography/6.jpg" alt="img06"></div>
+								<figcaption>
+									<h3>Jhalak</h3>
+									<span></span>
+									<a class="jhalak">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+						<br/>
+						<li>
+							<figure>
+								<div><img src="img/photography/7.jpg" alt="img02"></div>
+								<figcaption>
+									<h3>CET Through Lens</h3>
+									<span></span>
+									<a class="cethroughlens">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<div><img src="img/photography/8.jpg" alt="img04"></div>
+								<figcaption>
+									<h3>The Selfie Contest</h3>
+									<span></span>
+									<a class="selfie">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+			</div><!-- /row -->
+		</div><!-- /photography -->
+	</div>
+	<div class="container">
+		<div id="music" class="scrollme animateme" data-when="enter" data-from="0.5" data-to="0" data-crop="false" data-opacity="0" data-scale="1.5">
+			<div class="row">
+				<div class="left">&nbsp;</div>
+				<div class="right">
+					<h1>Music</h1>
+					<ul class="grid cs-style-4">
+						<li>
+							<figure>
+								<div><img src="img/music/9.jpg" alt="img05"></div>
+								<figcaption>
+									<h3>Goonj</h3>
+									<span></span>
+									<a class="goonj">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<div><img src="img/music/10.jpg" alt="img06"></div>
+								<figcaption>
+									<h3>Overdrive</h3>
+									<span></span>
+									<a class="overdrive">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+			</div><!-- /row -->
+		</div><!-- /music -->
+	</div>
+	<div class="container">
+		<div id="dramatics" class="scrollme animateme" data-when="enter" data-from="0.5" data-to="0" data-crop="false" data-opacity="0" data-scale="1.5">
+			<div class="row">
+				<div class="left">&nbsp;</div>
+				<div class="right">
+					<h1>Dramatics</h1>
+					<ul class="grid cs-style-4">
+						<li>
+							<figure>
+								<div><img src="img/dramatics/11.jpg" alt="img05"></div>
+								<figcaption>
+									<h3>Nukkad</h3>
+									<span>Street Play Competition</span>
+									<a class="nukkad">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<div><img src="img/dramatics/12.jpg" alt="img06"></div>
+								<figcaption>
+									<h3>Reflex</h3>
+									<span>On the spot play</span>
+									<a class="reflex">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<div><img src="img/dramatics/13.jpg" alt="img06"></div>
+								<figcaption>
+									<h3>Nishabd</h3>
+									<span></span>
+									<a class="nishabd">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+			</div><!-- /row -->
+		</div><!-- /dramatics-->
+	</div>
+	<div class="container">
+		<div id="literary" class="scrollme animateme" data-when="enter" data-from="0.5" data-to="0" data-crop="false" data-opacity="0" data-scale="1.5">
+			<div class="row">
+				<div class="left">&nbsp;</div>
+				<div class="right">
+					<h1>Literary</h1>
+					<ul class="grid cs-style-4">
+						<li>
+							<figure>
+								<div><img src="img/literary/13.jpg" alt="img05"></div>
+								<figcaption>
+									<h3>Price it Right</h3>
+									<span></span>
+									<a class="priceitright">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<div><img src="img/literary/12.jpg" alt="img06"></div>
+								<figcaption>
+									<h3>EtCETera</h3>
+									<span>Entertainment Quiz</span>
+									<a class="etcetera">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+						<br/>
+						<li>
+							<figure>
+								<div><img src="img/literary/14.jpg" alt="img06"></div>
+								<figcaption>
+									<h3>Treasure Hunt</h3>
+									<span></span>
+									<a class="treasurehunt">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<div><img src="img/literary/15.jpg" alt="img06"></div>
+								<figcaption>
+									<h3>Khelzilla</h3>
+									<span></span>
+									<a class="khelzilla">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+			</div><!-- /row -->
+		</div><!-- /literary -->
+	</div>
+	<div class="container">
+		<div id="fun" class="scrollme animateme" data-when="enter" data-from="0.5" data-to="0" data-crop="false" data-opacity="0" data-scale="1.5">
+			<div class="row">
+				<div class="left">&nbsp;</div>
+				<div class="right">
+					<h1>Fun</h1>
+					<ul class="grid cs-style-4">
+						<li>
+							<figure>
+								<div><img src="img/fun/armwrestling.jpg" alt="img05"></div>
+								<figcaption>
+									<h3>Arm Wrestling</h3>
+									<span></span>
+									<a class="armwrestling">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<div><img src="img/fun/tugofwar.jpg" alt="img05"></div>
+								<figcaption>
+									<h3>Tug of War</h3>
+									<span></span>
+									<a class="tugofwar">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<div><img src="img/fun/streetball.jpg" alt="img05"></div>
+								<figcaption>
+									<h3>Street Ball</h3>
+									<span></span>
+									<a class="streetball">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+						<br/>
+						<li>
+							<figure>
+								<div><img src="img/fun/futsal.jpg" alt="img05"></div>
+								<figcaption>
+									<h3>Futsal</h3>
+									<span></span>
+									<a class="futsal">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<div><img src="img/fun/gc.jpg" alt="img05"></div>
+								<figcaption>
+									<h3>Gully Cricket</h3>
+									<span></span>
+									<a class="gullycricket">Take a look</a>
+								</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div><!-- /fun -->
+	<div class="container-fluid">
+		<div id="groundzero" class="scrollme animateme cycle-slideshow" data-cycle-fx="fade" data-when="enter" data-from="0.5" data-to="0" data-crop="false" data-opacity="0" data-scale="0.5" data-cycle-pause-on-hover="true">
+
+			<div class="cycle-prev"></div>
+			<div class="cycle-next"></div>
+			<img src="img/groundzero/1.jpg" alt="">
+			<img src="img/groundzero/2.jpg" alt="">
+			<img src="img/groundzero/3.jpg" alt="">
+			<img src="img/groundzero/4.jpg" alt="">
+			<img src="img/groundzero/5.jpg" alt="" class="roadies">
+		</div>
+	</div><!-- /groundzero -->
+	<div class="container-fluid">
+		<div id="register" class="scrollme" data-when="enter" data-from="0.5" data-to="0" data-crop="false" data-opacity="0" data-scale="1.5">
+			<iframe src="https://docs.google.com/forms/d/1IqAKuABTelq5ckgjscyxUDjGjEXRCDk8LGcnYwoIuAI/viewform?embedded=true" height="1500px" width="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>					
+		</div>
+	</div>
+</div><!-- /groundzero -->
+</div>
+
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+<script type="text/javascript" src="js/js-image-slider.js"></script>
+<script type="text/javascript" src="js/jquery.scrollme.min.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/boxesFx.js"></script>
+<script type="text/javascript" src="js/jquery.sticky.js"></script>
+<script type="text/javascript" src="js/jquery.stickynav.js"></script>
+<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="js/sweet-alert.min.js"></script>
+<script>
+	new BoxesFx( document.getElementById( 'boxgallery' ) );
+	$(window).load(function(){
+		$("#cssmenu").sticky({ topSpacing: 0 });
+		$('#cssmenu li a').on('click', function(){
+			$('li.active').removeClass('active');
+			$(this).addClass('active');
+		});
+
+		$("a.ripout").click(function(){
+			swal({   
+				title: "Rip Out",   
+				text: "Have you got what it takes to sweep the crowd of its feet ???\nFOR THE FIRST TIME...\nCET's most awaited event is all set to witness the clash of the dance crews. XTASY 2015 presents you 'RIP OUT', all style group battle competition. This is your chance to take over the street stage. Here's an open call for the dance crews out there come, battle and fight for your glory with your fresh skills..\nSo guys...\n'WELCOME TO THE STREETS...'\n\nRules:\nGroups have to prepare a routine of 1 min for cypher. Rules for teams qualifying to finals to be given on the spot.\nEntry Fee: Rs. 500\n\nContact Us:\nUdatta:9658260618\nRajesh:8984213431\n\nPrizes: Rs 5000",
+				confirmButtonText: "Close" 
+			});	
+		});
+		$("a.dancingfeet").click(function(){
+			swal({   
+				title: "The Dancing Feet",   
+				text: "Prove your mettle against tough competition in this dance event, with challenges from impromptu choreography to situational depictions.\nXTASY 2015 brings you ʺTHE DANCING FEETʺ, solo daning competition.\nCan you come up tops in the event where we test everything from skill to energy to emotion?\n\nRules:\n1. The event comprises of a single round. Time limit – 2+1 minute (Empty stage to empty stage).\n2. Participants must bring their college identity card failing which they shall not be allowed to participate in the event\n3. Participants must bring their sound tracks in CD/pen drive and submit the tracks prior to the event.\n4. Judging criteria includes choreography, stage utilization, energy level, innovation, presentation, and overall impact on the crowd.\n5. A participant cannot disrespect the character that he/she is portraying. Any such action or attempt may lead to disqualification.\n6. Live music is not allowed.\n7. Accessories, costumes, props has to be arranged by the participants. Naked flames & live animals are not allowed.\n8. In case of malfunctioning of any equipment, the participant will be allowed to repeat their performance from the beginning or from the point of disruption as per the participant's wish, with the consent of the judge.\n9. The performance should be in cohesion with the integrity of the fest.\n10. The decision of the judges and the organizing team will be final and binding.\nEntry Fee : Rs 100\n\n Contact Us:\nNihar : 7752085231\nSurya : 9178886860\n\nPrize: Rs 4000",
+				confirmButtonText: "Close" 
+			});	
+});
+$("a.jugalbandi").click(function(){
+	swal({   
+		title: "Jugalbandi",   
+		text: "RULES:\n1. The event will be a single round event.\n2. The event is strictly a duo dance competition and there shouldn’t be any extra person on stage or at any point during the performance.\n3. Participants must bring their college identity card failing which they shall not be allowed to participate in the event.\n4. Any combination of two people irrespective of the gender is allowed. Not necessarily the participants have to be from same college. People from different college can also pair up and participate.\n5. All dance forms are allowed.\n6. Max. Time allotted to each couple is 3+1 min.\n7. 20% marks will be deducted if the performance exceeds by 15 sec. If the performance increases further by 30 sec, it will lead to disqualification.\n8. The performance music has to be brought by the participants in a CD/pen drive. It is advised that they have a back-up in a CD. Team XTASY will not be responsible for this.\n9. In case of malfunctioning of any equipment provided, the pair will be allowed to repeat their performance from the beginning or from the point of disruption that they wish, with the consent of the judges.\n10. All accessories, costumes have to be arranged by the participants. Naked flames & live animals are not allowed.\n11. The decision of the judges and the organizing team will be final and binding.",
+		confirmButtonText: "Close" 
+	});	
+});
+$("a.dothehustle").click(function(){
+	swal({   
+		title: "Do The Hustle",   
+		text: "RULES:\n1.	This is strictly an inter-collegiate event.\n2.	The time limit of the performance will be 8+2 minutes from empty stage to empty stage.\n3.	Maximum members of the group should not exceed 15. There should be at least 4 active members on the stage throughout the performance.\n4.	The participating teams are requested to ensure that their presentation is in keeping with the dignity of the fest.\n5.	There is no theme for the dance competition.\n6.	All Participants must bring their college identity cards failing which they shall not be allowed to participate in the event.\n7.	Participants should get their songs/music on a CD and a pen-drive. It is advised that they have a backup in a CD. Organising committee will not be responsible for this.\n8.	Marks shall be deducted for exceeding the time limit [20% deducted for exceeding 10 minutes and team might be disqualified for exceeding 12 minutes based on the judge’s discretion].\n9.	In case of malfunctioning of any equipment provided, the team will be allowed to repeat their performance from the beginning or from the point of disruption that the team wishes, with the consent of the judge.\n10.	All costumes and accessories have to be arranged by the participating team. Naked flames & live animals are not allowed.\n11.	The decision of the judges and the organizing team will be final and binding.",
+		confirmButtonText: "Close" 
+	});	
+});
+$("a.cethroughlens").click(function(){
+	swal({   
+		title: "CET Through Lens",   
+		text: "Coming soon!",
+		confirmButtonText: "Close" 
+	});	
+});
+$("a.selfie").click(function(){
+	swal({   
+		title: "The Selfie Contest",   
+		text: "Turn on your front cam folks coz we bring to you an out-of-box selfie contest. Click and send your selfies or groufies and who knows, your selfie could win you prizes!!\n\nRules:\n1. There are two categories i.e. SELFIE(individual selfie) and GROUFIE(group selfie). Each contestant can give entry for both categories.\n2. It must be submitted within 25th FEBRUARY 2015.\n3.Send your entries to selfie@cetb.in\n4. The attachment should contain the following details:\nfor selfie- Name, Stream, College, phone no.\nfor groufie, group name, group members, phone no of any member, College(may be more than one)\n5. Selection procedure is based on the number of Facebook likes they get. So the participant will have to promote their pics as much as possible.\n6. No LIKE INCREASING software should be used; otherwise the contestant will be disqualified.\n\nContact Us:\nLipak :9438129368\nAditya :9438826252\nAnkita :8763775020\n\nPrizes: Rs 5000",
+		confirmButtonText: "Close" 
+	});	
+});
+
+$("a.goonj").click(function(){
+	swal({   
+		title: "Goonj",  
+		text: "Solo Singing Competition\nSinging is the one talent virtually everybody possesses.So explore your talent and grab the exciting prizes.Your golden voice will be ringing out in no time.\nRules\n1. LANGUAGE TO BE USED : HINDI/ENGLISH\n2. SEPARATE GENRE : EASTERN/WESTERN\n3. SEPARATE JUDGEMENT FOR EASTERN/WESTERN CATEGORY\n4. TIME LIMIT 3mins\n5. ONLY 1 ROUND [PRELIMS+FINAL]\n6. SINGER CAN BE ACCOMPANIED BY ONLY 1 MUSICAL INSTRUMENT (GUITAR/KEYS). IF KEYS IS USED THEN ONLY 1 PATCH IS ALLOWED\n7. THE SONG MUST NOT CONTAIN ANY OBSCENE WORDS8. NO EXTRA MARKS FOR ORIGINALITY / USAGE OF INSTRUMENTS.\n9. JUDGES DECISION IS FINAL. CO-ORDINATORS CAN CHANGE THE RULES AS THEY FEEL SUITS RIGHT.\n10. KARAOKE CANNOT BE USED\nContact Us:\nAnshuman :9437597353\nShubhakanta :8763694608\nKiran :9439661055\n\nPrize: Rs 1500x 2; Rs 500 x 2",
+		confirmButtonText: "Close" 
+	});	
+});
+$("a.overdrive").click(function(){
+	swal({   
+		title: "OverDrive",   
+		text: "War Of Bands-Musical Band Competition\nOverDrive is a contest in which two or more bands compete for the title of ʺBEST BANDʺ.\n\nRules:\n1. A band will be required to perform three songs of their choice within 20 minutes. (Amps on to amps off inclusive of sound check) ie the given time will include your set-up time also.\n2. The numbers should be in Hindi or English or maybe a fusion, regionals languages are not allowed.\n3. Your band will be required to perform at least 3 numbers within 20 minutes. (Amps on to amps off inclusive of sound check) Marks will be deducted for exceeding the time limit.\n4. The Judges' decision shall be final and binding for all.\n5. The decision of the organizers with respect to line-up is final and abiding.\n6. Xtasy will not be liable for the failure of any instrument.\n7. Xtasy reserves the right to make any last minute change in the rules.\n8. Bands will have to bring their own musical instruments and special effects. However, programmed music is prohibhited.\n9. Bands will be disqualified on the spot for misconduct, obscenity or intentional use of foul language and will be banned from performing at all subsequent editions of Xtasy.\n\nJudging Criteria:-1. Planning & Preparedness - 20%\n2. The planning and preparedness of the band prior to the event reflects the performance of the band.\n3. Originality - 30%\n4. How unique were the songs? Did the band look original? Did the band stand out?\n5. Did the band demonstrate any level of original improvisational skill?\n6. Interface with Audience - 10%\n7. Did the band talk to/with the audience? Did the band physically participate with the audience?Eg. Eye contact, head nod, acknowledgments, waving, gesturing,dancing with the audience or hand signals. Confidence: Was the band confident in their interaction with the audience?\n8. Quality of Performance - 20%\n9. Was the performance well constructed and able to manipulate the audience's mood? Did the band use the stage effectively? Did the band appear positive about their performance?\n10. Presentation - 20%\n11. Did the band's on-stage attitude appear suitable to their genre? Did the band entertain?\nEntry Fees:\n Rs 1200 per team\n\nContact Us:\nOm : 7855054789\nShubhakanta : 8763694608\nSarthak : 7894848856\n\nPrize: Rs 20000",
+		confirmButtonText: "Close" 
+	});	
+});
+
+// Dramatics
+$("a.nukkad").click(function(){
+	swal({   
+		title: "Nukkad Natak",   
+		text: "Sun suno suno...it's time to raise your voice for the sake of Society.\nStay tuned....as coming soon the most \nawaited,entertaining,thrilling street play competition - 'NUKKAD NATAK'\nYou have to put on a seat belt...As you will be thrown out from the world of insane.\n\nRules:\n1.Maximum 15 members in a team.\n2.All the teams will get total of 15+2 minutes including act preparation.\n3.Only live music is allowed.\n4.No electric gadgets or musical instruments are allowed during the act.\n6.Any kind of offensive behaviour with the Co ordinator will not be tolerated and the team will disqualified\n7.Language is hindi.\n8.All the team should carry their own prop and costumes . any kind of external support won't be provided.\n9.Marks will be given on the basis theme of the play,dialogue delivery,crowd response,weightage of the play &last but not the least the individual judge's scores..\nEntry Fee: Rs. 1000 per team.\n\nContact Us:\nAjoy:9778587903\nVivek:9437544496\n\nPrize: Rs. 10000",
+		confirmButtonText: "Close" 
+	});	
+});
+$("a.reflex").click(function(){
+	swal({   
+		title: "Reflex",   
+		text: "Darkness Subsides and the Curtain Rises the Shimmering light bring surprises from its depth a star is born it  amuzes and deludes and despair is worn . The spot light is on ,the stage is ready  now it's your time show the reflex in your act .\n\nRules:\n1.Team consists of 5 members.\n2.Team will be given 5 chits of different theme.They have to assemble the 5 themes and make a short play.\n3.Team will be given 2 minutes to think and 5 minutes to act.\n4.Any kind of offensive behaviour will not be tolerated and the team will be disqualified.\n5.Judgement   is on the basis of crowd response,dialogue delivery.\n6.Play is to be performed in either Hindi,English, Odiya.\nEntry Fee : Free\n\nContact Us:\nPratikshya- +91 - 9692802102\nDebasis-  +91 - 9178000744\n\nPrizes: Rs 2000",
+		confirmButtonText: "Close" 
+	});	
+});
+$("a.nishabd").click(function(){
+	swal({   
+		title: "Nishabd",   
+		text: "Hello Folks, Enough of screaming, enough of shouting and Enough of bantering. Its time for some peace because this Xtasy, AMUZA brings you NISHABD, a mute-acting competition where you will keep your lips tight nd let your body do all the noise. So, KEEP CALM and STAY TUNED..\n\nRules:\n1.Team of atmost 2 members.\n2. Maximum time alloted will be 3 minutes.\n3.Marks will be decided by the judges on the basis of act and theme.\n\nContact Us:\nAbhijeet Tripathy : +91 -9438154765\nAnish Tripathy : +91- 9040195553\n\nPrize: Rs 1000",
+		confirmButtonText: "Close" 
+	});	
+});
+
+// Photography
+$("a.tasveer").click(function(){
+	swal({   
+		title: "Tasveer",   
+		text: "'TASVEER' the online photography competition.\nTHEME :\n1.PORTRAITS\n2. LANDSCAPES\n\nRules:\n1. Each participant can mail us only one photo from each theme.\n2. Size of the photo should be less than 5 Mb and caption is mandatory(Photographs without caption will be disqualified)\n3. Digitally modified photographs are not allowed. (Although minor contrast, brightness, hue and saturation enhancements are allowed)\n4. Uploading of photographs will start from 20th of Feb.\n5. Photographs will be uploaded on fb.com/cetphotofactory\n6. 10 photographs will be short listed for the final round from each THEME . (5 on the basis of Facebook likes and comments and 5 on the basis of jury's decision)\n7. There will be two winners for each THEME.\n8. Those 20 photographs will be displayed at FRAMES' 15(Art Gallery Of CET-B)\n9. The winners will be awarded with EXCITING PRIZES worth 5000 and CERTIFICATES.\n10.The deadline of submission is 26th of February.\n\nContact Us:\nOnam : 9853530590\nPrakash : 7205524733\nSrusti : 8908244438\n\nPrize: Rs 5000",
+		confirmButtonText: "Close" 
+	});	
+});
+$("a.jhalak").click(function(){
+	swal({   
+		title: "JHALAK",   
+		text: "JHALAK 2k15 The Online Documentary contest.\nTheme :-\n'WE CAN BE HEROES'\nDescription :-\nI am dream. We are courage. Together we can change the world. We are passion. We are heroes. Use your creativity to make a film capturing the theme ʺWE CAN BE HEROESʺ. You can use your imagination to interpret the meaning in a much broader perspective also. The film can be a work of fiction or documentary.\n\nRules:\n1. The maximum duration of movie should not exceed 5 minutes.\n2. A team may consists a max of 5 members ( any no of actors allowed ).\n3. You'll have to upload your film online on YouTube and mail the link of the uploaded video to events@cetb.in with the subject ʺJHALAKʺ.\n4. The body should contain the name of members, the college name and the team name.\n5. The videos will be uploaded in our official YouTube channel on 25th FEB.\n6. The teams will be given a span of 4 days to promote their movies n get as many likes n comments on their respective movies.\n7. The films will be screened and judged by our esteemed jury members on 1st MARCH in CET-B's architecture lobby.\n8. The winner will be decided on the basis of combination of maximum number of likes on the uploaded video in YouTube and judgement of our esteemed jury.\n9. The decision of the jury panel and organizers is final.\n\nContact Us:\nKishan : 8093438017\nAnkita : 8093170164\nBishal : 7205230811\n\nPrizes: Rs 5000",
+		confirmButtonText: "Close" 
+	});	
+});
+
+// Literary
+$("a.priceitright").click(function(){
+	swal({   
+		title: "Price It Right",   
+		text: "Contact: Vikas Verma - 977 837 6766",
+		confirmButtonText: "Close" 
+	});	
+});
+$("a.etcetera").click(function(){
+	swal({   
+		title: "EtCETera",   
+		text: "Contact: Bidit Mohanty - 977 612 1048",
+		confirmButtonText: "Close" 
+	});	
+});
+$("a.treasurehunt").click(function(){
+	swal({   
+		title: "Treasure Hunt",   
+		text: "Contact: Alisha Rout - 904 089 8398\nAnirban Pati - 707 795 7809\nTanuja & Tejasvitta",
+		confirmButtonText: "Close" 
+	});	
+});
+$("a.khelzilla").click(function(){
+	swal({   
+		title: "Khel Zilla",   
+		text: "DESCRIPTION: After 2 years of resounding success in intermixing the world of sports and quizzing, the makers of the biggest sports quiz in the city bring to you the 3rd edition of KHELZILLA.. Its going to be bigger , better and bouncier...(The awards as well). So if you think you know everything from Bale to Gayle, from Roger to Tiger and from the Helicopter Shot to  the Square Cut, this is the place to be.\n\nEVENT DETAILS:\n*Team: U can be a Lonewolf, team of 2 or 3.\n*Entry fee: Per head Rs.10\n*Exciting awards to be won\n*Guaranteed entry to one all girls team into the finals\n*Like our facebook page, Khelzilla: CET sports-fortress, and stay in touch to get further details.\n\nCONTACT:\nSachikanta -809 387 2629\nSoumya Ranjan - 828 021 9448\nSubhasish - 993 734 3636",
+		confirmButtonText: "Close" 
+	});	
+});
+
+// Fun
+$("a.armwrestling").click(function(){
+	swal({   
+		title: "Arm Wrestling",   
+		text: "General rules applied",
+		confirmButtonText: "Close" 
+	});	
+});
+$("a.tugofwar").click(function(){
+	swal({   
+		title: "Tug of War",   
+		text: "1. Each team comprises of 8 members.\n2. Open 2 all genders,both Male & Female.\n3. Other general rules applied.\nFees: Rs. 10 from each member, i.e. Rs.80 from each team",
+		confirmButtonText: "Close" 
+	});	
+});
+$("a.streetball").click(function(){
+	swal({   
+		title: "Street Ball",   
+		text: "1) Team of 3 members only.\n2) Team should comprise of members from same college only.\n3) Team could be all boys, all gals, or even mixed.\n4) 2 Quarters of 5 min each, & a break of 2 min in between(No TimeOuts)\n5) Wear matching clothes,shoes & cut ur nails.\n6) Matches will be against teams,irrespective of gender.\n7) Max of 2 Fouls allowed in each quarter,if more den team will be disqualified.\n\nEntry Fees : Rs.50(CET)\nRs. 100(Other Colleges)\n\nContact: Vivek Vikas Pattnaik - 943 754 4496",
+	confirmButtonText: "Close" 
+});	
+});
+$("a.futsal").click(function(){
+	swal({   
+		title: "Futsal",   
+		text: "1) 4 players in each team.Each team can have 2 substitutes.\n2) Goalkeeper can only use foot.No use of hands,if used then it ll be declared as penalty.\n3) No ball contact with the D-Area other dan Goalkeeper.If contact done by teammates, den it will be declared as penalty.\n4) Foul will be declared if ball is raised above chest of player.\n5) Kick can be made only from outside the D-Area,otherwise Foul.\n6) 2 halves of 10 min each & a break of 2 min.\n\nRegistration Fees :: Rs. 200(Home Team-CET)\nRs. 400(Outside)\n\nContact: Rajib Dehury - 738 153 7740",
+	confirmButtonText: "Close" 
+});	
+});
+$("a.gullycricket").click(function(){
+	swal({   
+		title: "Gully Cricket",   
+		text: "Reminisce your childhood memories of the days when you started cricket. XTASY GROUND ZERO brings you 'GULLY CRICKET' to unleash the child within you.\n\nRules:\n1. It is 5 over tournament and each team consists of 6 members.\n2. Matches will be played with GREEN COSCO TENNIS BALL.\n3. Only ground shots are allowed and there would be TWO SPECIAL ZONES which will reward 12 and 8 runs respectively if hit directly.\n4. Maximum over limit for one bowler is ONE OVER.\n5. All the equipment will be provided by team XTASY.\n6. Entry fee- Rs. 300 per team and Rs. 200 per team for CET students.\n7. I-cards are mandatory for participation, failing which the team shall not be allowed to participate.\n8. Prizes worth 3000/- to be won.\n8. FREE ENTRY FOR GIRLS TEAM.\n\nCo-ordinators:\nUdatta - 965 826 0618\nSwarup - 809 378 1702\nSuman - 955 687 7737",
+		confirmButtonText: "Close" 
+	});	
+});
+
+$("img.roadies").click(function(){
+	swal({   
+		title: "Rodies v2.0",   
+		text: "Participate and show us how far u can go?? you ,yourself and the roadie in you. be true,be coherent and be venturous and then there you are !!!\n\nRules and Regulations:\n-All the materials (props) required for the tasks will be provided.\n-Contestants respect to others, calmness etc. will be considered for judgment.\n-Fill out the complete form. Leaving questions blank will not work in your favor. We promise!\n-Please ensure that your phone nos and other details are written correctly and clearly. This could be the difference between you getting selected or rejected.\n-Express yourself freely and be yourself! no potraying of false personality and bring out the you in the application form.\n-You are responsible for your actions and your future!\nNumber of Rounds: 4\nROUND 1: FORM FILLING\nA form is made up where information of the participant is taken and certain question is asked on rational thinking of the student.\nROUND 2: GROUP DISCUSSION\nA group of 8-10 participant is made where they compete on speaking ,ideas and confidence .The best participant are short listed from each gropu for the next round.\nROUND 3: PERSONAL INTERVIEW\nParticipants are quest ionised face to face about their personality and the form they have filled up.\nROUND 4: TASKS\nHere 3 rounds takes place, Group task followed by vote out, individuals task followed by a vote out, and final round in which physical stamina, strength, quick and clever plan of action are tested.\nREPORTING VENUE: C-205 10:00 Hrs\nImportant points:\n1. After announcing the result of G.D next round i.e. the P.I will start just after 15 min.\n2. A panel of 2 members will be form for the G.D round, who will shortlist the student for the next round.\n3. Another panel of 3 member will be formed for the P.I round, who will shortlist the students for the final round.\n\nRegister: http://goo.gl/forms/cLh4RhzjW1\n\nContact:\nSushovan Sahoo - 985 394 4458\nMousumi Panda - 898 447 3782\nPratik Parida - 943 853 0172\n\nPrize: Worth Rs. 5000",
+		confirmButtonText: "Close" 
+	});	
+});
+
+});
+</script>
+</body>
+</html>
